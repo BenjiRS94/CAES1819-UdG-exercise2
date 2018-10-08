@@ -1,5 +1,6 @@
 package edu.udg.caes;
 
+import java.util.Set;
 import java.util.Vector;
 
 public class Exercise2 {
@@ -13,7 +14,10 @@ public class Exercise2 {
      */
     public static Vector union (Vector a, Vector b)
     {
-        throw new UnsupportedOperationException("Non implemented yet");
+        Vector<Object> merge = new Vector();
+        merge.addAll(a);
+        merge.addAll(b);
+        return merge;
     }
 
 }
